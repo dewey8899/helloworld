@@ -16,7 +16,7 @@ spec:
       protocol: TCP
       targetPort: 443
   selector:
-    run: spring-boot-sample
+    run: spring-boot-dewey
   sessionAffinity: None
   type: ClusterIP
 

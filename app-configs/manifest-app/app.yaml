@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    run: spring-boot-sample
-  name: spring-boot-sample
+    run: spring-boot-dewey
+  name: spring-boot-dewey
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
-      run: spring-boot-sample
+      run: spring-boot-dewey
   template:
     metadata:
       labels:
-        run: spring-boot-sample
+        run: spring-boot-dewey
     spec:
       containers:
       - image: ${IMAGE}
